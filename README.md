@@ -22,8 +22,8 @@ Celebrity — камерне помешкання (`lodge_or_guest_house`) у К
 ## Reviews
 Google 4.5/5 (207) і Booking.com 9.0/10 (137) — знімок на 29.09.2026. Показано окремими картками в hero та в секції відгуків, без спільного «середнього» і без aggregateRating у structured data. Цитат немає.
 
-## Booking flow
-Email не підтверджено, тому mailto-форми немає. Форма «Перевірити проживання» (дати, гості, тварина Так/Ні з уточненням виду й ваги, паркомісце Так/Ні, ім’я, телефон) нікуди не надсилає дані: вона складає текст запиту й показує блок «Запит готовий» із кнопками «Надіслати SMS» (sms: на номер готелю), «Скопіювати текст», «Зателефонувати» і «Ці дати на Booking.com» (checkin/checkout/group_adults). Миттєве бронювання не обіцяється.
+## Forms
+Connected to HotelOS (`hotelId` kp-celebrity): `stay-request` (phone required; name, guests, dates, message — pet/parking details go in the message). No room-type select (categories unverified). Also bookable by phone and on Booking.com; instant booking is not promised.
 
 ## Structured data
 `LodgingBusiness` (не `Hotel`), name Celebrity, alternateName «Знаменитій». Без numberOfRooms, starRating, email, check-in/out, aggregateRating.
